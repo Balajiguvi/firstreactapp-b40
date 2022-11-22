@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { User } from './User';
 
 // App component (view+logic) - decleration
 function App() {
@@ -36,20 +37,4 @@ function App() {
   );
 }
 
-// user component 
-function User({ name, pic, about, rating }) {
-  // const { name, pic } = props     ---> (obejct desturucturing)
-  // let name = props
-  return (
-    <>
-      <img className="user-pic" src={pic} alt={name} />
-      <h1><span className="user-name">{name}</span></h1>
-      <h4>Language : Tamil</h4>
-      <h4>Rating: {rating} </h4>
-      <h3>{about}</h3>
-    </>
-  );
-}
-
-
-export default App;
+export default App;   // default export
